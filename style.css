@@ -308,6 +308,7 @@ main {
 .main-plans-container {
     width: 100%;
     min-width: 320px;
+    height: auto;
     padding-bottom: 70px;
     text-align: center;
     background-color: var(--off-white);
@@ -423,6 +424,39 @@ main {
 .plans-container-card__content button img {
     width: 24px;
     height: 24px;
+}
+/* estilos del footer */
+footer {
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer div {
+    max-width:400px;
+    min-width: 288px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.links-container ul{
+    list-style: none;
+}
+.links-container a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+.batata-copyright {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
 }
 
 
