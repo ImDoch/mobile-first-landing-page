@@ -336,15 +336,28 @@ main {
 .plans-container__slider {
    min-width: 288px;
    max-width: 915px;
+   min-height: 280px;
    margin: 0 auto;
    display: flex;
    justify-content: center;
+   align-items: center;
    gap: 10px;
+   overflow-x: scroll;
+}
+.plans-container__slider::-webkit-scrollbar {
+  height: 4px;
+}
+.plans-container__slider::-webkit-scrollbar-track {
+  background: var(--soft-orange) 
+}
+.plans-container__slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+  border-radius: 4px;
 }
 .plans-container-card {
     position: relative;
     max-width: 200px;
-    min-height: 250px;
+    height: 250px;
     font-family: 'Inter', sans-serif;
     border-radius: 10px;
     background-color: var(--just-white);
@@ -368,7 +381,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .plans-container-card__content h3 {
@@ -411,6 +424,8 @@ main {
     width: 24px;
     height: 24px;
 }
+
+
 /* vista tablets en adelante */
 @media (min-width: 768px) {
     .main-tables-container {
@@ -419,6 +434,9 @@ main {
     .cards-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+    }
+    .plans-container__slider {
+        overflow-x: hidden;
     }
 }
