@@ -123,6 +123,12 @@ main {
     color: #757575;
 }
 /* estilos tablas de exchange container */
+.main-tables-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: 0 auto;
+}
 .main-currency-table {
     width: 70%;
     min-width: 235px;
@@ -204,4 +210,91 @@ main {
 }
 .currency-table__date--blue {
     background-color: #E7F5FF;
+}
+/* estilos de la seccion de información */
+.main-info-container {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    padding: 30px 0 30px;
+    background-color: var(--warm-black);
+}
+.section-separator {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 24px;
+}
+.main-info-container__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--just-white);
+}
+.main-info-container__title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+}
+.main-info-container__title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.cards-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.cards-container__card {
+    width: 288px;
+    height: 152px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    background-color: var(--black);
+}
+.cards-container__card img {
+    width: 24px;
+    height: 24px;
+}
+.cards-container__card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+    color: var(--just-white);
+}
+.cards-container__card p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+
+/* vista tablets en adelante */
+@media (min-width: 768px) {
+    .main-tables-container {
+        flex-direction: row;
+    }
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
