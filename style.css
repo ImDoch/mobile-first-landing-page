@@ -232,8 +232,7 @@ main {
     min-width: 288px;
     max-width: 900px;
     height: auto;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 40px auto 30px;
     text-align: center;
     color: var(--just-white);
 }
@@ -252,7 +251,7 @@ main {
 .cards-container {
     width: 90%;
     min-width: 288px;
-    max-width: 1200px;
+    max-width: 915px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -262,13 +261,14 @@ main {
 .cards-container__card {
     min-width: 288px;
     max-width: 450px;
-    height: 152px;
+    min-height: 152px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 6px;
     background-color: var(--black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 .cards-container__card img {
     width: 24px;
@@ -286,7 +286,24 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
-
+/* estilos de la seccion de imagen */
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url(./assets/images/bitcoin-img-medium.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
 
 /* vista tablets en adelante */
 @media (min-width: 768px) {
