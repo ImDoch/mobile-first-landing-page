@@ -304,6 +304,127 @@ main {
     line-height: 2.6rem;
     color: var(--just-white);
 }
+/* estilos de la seccion de planes */
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+.main-plans-container__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto 50px;
+}
+.main-plans-container__title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-plans-container__title p {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* estilos tarjetas de la seccion de planes*/
+.plans-container__slider {
+   min-width: 288px;
+   max-width: 915px;
+   min-height: 280px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   overflow-x: scroll;
+}
+.plans-container__slider::-webkit-scrollbar {
+  height: 4px;
+}
+.plans-container__slider::-webkit-scrollbar-track {
+  background: var(--soft-orange) 
+}
+.plans-container__slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+  border-radius: 4px;
+}
+.plans-container-card {
+    position: relative;
+    max-width: 200px;
+    height: 250px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    background-color: var(--just-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.plans-container-card .recomended{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+}
+.plans-container-card__content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.plans-container-card__content h3 {
+    padding-top: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.plans-container-card__content .plans-container-card__price {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--black);
+}
+.plans-container-card__price sup {
+    margin-right: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.plans-container-card__content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+}
+.plans-container-card__content button{
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid var(--bitcoin-orange);
+    background-color: var(--soft-orange);
+}
+.plans-container-card__content button img {
+    width: 24px;
+    height: 24px;
+}
+
 
 /* vista tablets en adelante */
 @media (min-width: 768px) {
@@ -313,6 +434,9 @@ main {
     .cards-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+    .plans-container__slider {
+        overflow-x: hidden;
     }
 }
